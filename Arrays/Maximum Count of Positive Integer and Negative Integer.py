@@ -1,0 +1,12 @@
+class Solution:
+    def maximumCount(self, nums: List[int]) -> int:
+        p = n = int(0)
+        for i in nums:
+            if i < 0:
+                n += 1
+            elif i > 0:
+                p +=1
+        if n > p:
+            return n
+        else:
+            return p
